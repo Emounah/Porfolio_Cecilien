@@ -1,0 +1,373 @@
+.skills{
+    height: auto;
+    padding-bottom: 7rem;
+    background: url(../../assets/images/imag11.png) no-repeat rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+/* .skills  h2{
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.skills-column{
+    flex: 1 1 20rem;
+}
+.skills-column .title{
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+.skills-box{
+    position: relative;
+}
+.skills-content{
+    position: relative;
+    border: .16rem solid var(--colorgreen);
+    border-radius: .6rem;
+    padding: .1rem 2rem;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.skills-content .progress{
+    padding: .5rem 0;
+    background: transparent;
+    height: auto!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-content .progress h3{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-content .progress h3 span{
+    color: var(--colorwhite);
+}
+.progress .bar{
+    height: 2rem;
+    border-radius: .6rem;
+    border: .16rem solid var(--colorgreen);
+    padding: .5rem;
+    /* margin: 5rem 0; */
+    width: 100%;
+    background: transparent;
+}
+.progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--colorgreen);
+}
+.skills-content::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.637);
+    z-index: -1;
+    transition: .5s;
+}
+.skills-content:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+   width: 0%;
+   transition: .5s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar .spanHtml{
+    width: 70%;
+    transition: .5s linear;
+
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 0%;
+    transition: 1s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar .spanCss{
+    width: 70%;
+    transition: 1s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 0%;
+    transition: 1.5s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar .spanJS{
+    width: 60%;
+    transition: 1.5s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 0%;
+    transition: 2s linear;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar .spanReact{
+    width: 50%;
+    transition: 2s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 0%;
+    transition: .5s linear;
+
+ }
+ .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar .spanSite{
+    width: 80%;
+    transition: .5s linear;
+ }
+ .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 0%;
+    transition: 1s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar .spanDev{
+    width: 75%;
+    transition: 1s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 0%;
+    transition: 1.5s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar .spanLogiciel{
+    width: 70%;
+    transition: 1.5s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 0%;
+    transition: 2s linear;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar .spanGraphic{
+    width: 50%;
+    transition: 2s linear;
+}
+@media (max-width:4000px) {
+    .skills-content{
+        border: .6rem solid var(--colorgreen);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+    }
+    .skills-column .title{
+        font-size: 5rem;
+        margin: 1rem 0 1.5rem;
+    }
+    .skills-content .progress h3{
+        font-size: 3rem;
+        margin: 1.5rem 0;
+    }
+    /* .progress .bar{
+        padding: 1.5rem;
+    } */
+}
+@media (max-width:2900px){
+    .skills-content{
+        border: .3rem solid var(--colorgreen);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+    }
+    .skills-column .title{
+        font-size: 3rem;
+        margin: 1rem 0 1.5rem;
+    }
+    .skills-content .progress h3{
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+}
+@media (max-width:2000px){
+    .skills-content{
+        border: .2rem solid var(--colorgreen);
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+    }
+    .skills-column .title{
+        font-size: 2rem;
+        margin: 1rem 0 1.5rem;
+    }
+    .skills-content .progress h3{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+@media (max-width:1600px){
+    .skills-content{
+        border: .2rem solid var(--colorgreen);
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+    }
+    .skills-column .title{
+        font-size: 1.8rem;
+        margin: 1rem 0 1.5rem;
+    }
+    .skills-content .progress h3{
+        font-size: 1.2rem;
+        margin: .2rem 0;
+    }
+}
+@media (max-width:1366px){
+    .skills{
+        height: auto;
+        /* background: var(--colorabout); */
+        padding-bottom: 7rem;
+    }
+    /* .skills  h2{
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+    } */
+    .skills-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .skills-column{
+        flex: 1 1 20rem;
+    }
+    .skills-column .title{
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 0 0 1.5rem;
+    }
+    .skills-box{
+        position: relative;
+    }
+    .skills-content{
+        position: relative;
+        border: .16rem solid var(--colorgreen);
+        border-radius: .6rem;
+        padding: .1rem 2rem;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .skills-content .progress{
+        padding: .5rem 0;
+        background: transparent;
+        height: auto!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-content .progress h3{
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+    }
+    .skills-content .progress h3 span{
+        color: var(--colorwhite);
+    }
+    .progress .bar{
+        height: 2rem;
+        border-radius: .6rem;
+        border: .16rem solid var(--colorgreen);
+        padding: .5rem;
+        /* margin: 5rem 0; */
+        width: 100%;
+        background: transparent;
+    }
+    .progress .bar span{
+        display: block;
+        height: 100%;
+        border-radius: .3rem;
+        background: var(--colorgreen);
+    }
+    .skills-content::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: .5s;
+    }
+    .skills-content:hover::before{
+        width: 100%;
+        transition: .5s;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+       width: 0%;
+       transition: .5s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar .spanHtml{
+        width: 70%;
+        transition: .5s linear;
+
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+        width: 0%;
+        transition: 1s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar .spanCss{
+        width: 70%;
+        transition: 1s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+        width: 0%;
+        transition: 1.5s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar .spanJS{
+        width: 60%;
+        transition: 1.5s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+        width: 0%;
+        transition: 2s linear;
+    }
+    .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar .spanReact{
+        width: 50%;
+        transition: 2s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+        width: 0%;
+        transition: .5s linear;
+
+     }
+     .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar .spanSite{
+        width: 80%;
+        transition: .5s linear;
+     }
+     .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+        width: 0%;
+        transition: 1s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar .spanDev{
+        width: 75%;
+        transition: 1s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+        width: 0%;
+        transition: 1.5s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar .spanLogiciel{
+        width: 70%;
+        transition: 1.5s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+        width: 0%;
+        transition: 2s linear;
+    }
+    .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar .spanGraphic{
+        width: 50%;
+        transition: 2s linear;
+    }
+}

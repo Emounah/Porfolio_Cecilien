@@ -1,0 +1,655 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 5rem;
+    position: relative;
+    /* animation: leftAnim linear;
+    animation-timeline:view();
+    animation-range-start: 50%;
+    animation-range-end:100%; */
+}
+.educationp{
+    font-size: 1.2rem;
+    text-align: center;
+    background: transparent;
+    padding: 1% 2%;
+    /* border-radius: 9999px; */
+    /* border: .2rem solid var(--colorgreen); */
+    position: relative;
+    z-index: -1000000000000;
+    color:transparent;
+    /* animation: aboutanim linear;
+    animation-timeline: view();
+    animation-range-start: contain 30%;
+    animation-range-end: contain 100%;
+     opacity: 0; */
+    /* overflow: hidden; */
+    transform: translate(400%);
+    transition: .5s ease-in-out;
+}
+.educationp.educationp-vue{
+    transform: translate(0);
+    transition: .5s ease-in-out;
+}
+.educationp span{
+    color: white;
+}
+.educationp::before{
+    content: "J'ai un diplôme de Licence en Informatique et Télécomunications.";
+    position: absolute;
+    top:0rem;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: none;
+    z-index: 1000000000000;
+    /* border-radius: 9999px 0 0 9999px; */
+    /* border: .2rem solid var(--colorabout); */
+    color: white;
+    transform: rotate(10deg);
+    transition: .5s linear;
+    /* box-shadow: 0 20px 35px var(--colorgreen); */
+}
+.educationp::before:hover{
+    transform: rotate(0deg);
+    transition: .5s linear;
+}
+.educationp::after{
+    content: "Et je suivais la formation au centre de formation chez l'Hopse Formation,et j'ai eu un Certificat.";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background:transparent;
+    z-index: 10000000000;
+    /* border-radius:0 9999px 9999px 0; */
+    border: none;
+    color: white;
+    /* box-shadow: 0 20px 35px var(--colorabout); */
+    /* transform: rotate(10deg); */
+    /* border: .2rem solid  var(--colorgreen); */
+
+}
+
+.education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.education-column{
+    flex: 1 1 20rem;
+    position: relative;
+}
+.animateEducation-column{
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    z-index: 20000000000000;
+    width: 110%;
+    height: 100%;
+    background: #151515;
+    /* border: 2rem solid red; */
+    transition: .5s linear;
+}
+.animateEducation-column2{
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    z-index: 20000000000000;
+    width: 110%;
+    height: 100%;
+    background: #151515;
+    transition: .5s linear;
+}
+.animateEducation-column.animateEducation-column-vue,.animateEducation-column2.animateEducation-column2-vue{
+    width: 0;
+    transition: .5s linear;
+}
+.education-column .title{
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+.education-box{
+    position: relative;
+    border-left: .2rem solid var(--colorgreen);
+}
+.education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-content .content{
+    position: relative;
+    padding: 1rem;
+    border: .15rem solid var(--colorgreen);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.education-content .content .year{
+    font-size: 1rem;
+    color: var(--colorgreen);
+    margin-bottom: .5rem;
+}
+.education-content .content .year i{
+    padding-right: .2rem;
+    font-size: 1rem;
+}
+.education-content .content h3{
+    font-size: 1.2rem;
+}
+.education-content .content p{
+    font-size: 1rem;
+    padding-top: .6rem;
+}
+.education-content .content img{
+    width: 100%;
+}
+.education-content .content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colorabout);
+    z-index: -1;
+    transition: .5s;
+}
+.education-content .content:hover::before{
+    width: 100%;
+}
+.education-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--colorgreen);
+    border-radius: 50%;
+}
+.btnaboutattest a{
+    font-size: 20px!important;
+}
+@media (max-width:4000px) {
+    .education-box{
+        border-left: .5rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .5rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 4rem;
+    }
+    .education-column .title{
+        font-size: 5rem;
+    }
+    .education-content .content .year{
+        font-size: 3rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 3rem;
+    }
+    .education-content .content p{
+        font-size: 3rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 4rem;
+    }
+    .btnaboutattest a{
+        font-size: 60px!important;
+    }
+    .education-content::before{
+        left: -1.8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width:3800px) {
+    .education-box{
+        border-left: .5rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .5rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 3.5rem;
+    }
+    .education-column .title{
+        font-size: 4.5rem;
+    }
+    .education-content .content .year{
+        font-size: 2.5rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 2.5rem;
+    }
+    .education-content .content p{
+        font-size: 2.5rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 3.5rem;
+    }
+    .btnaboutattest a{
+        font-size: 55px!important;
+    }
+    .education-content::before{
+        left: -1.8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width:3000px) {
+    .education-box{
+        border-left: .5rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .5rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 3rem;
+    }
+    .education-column .title{
+        font-size: 4rem;
+    }
+    .education-content .content .year{
+        font-size: 2.5rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 2.5rem;
+    }
+    .education-content .content p{
+        font-size: 2rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 3rem;
+    }
+    .btnaboutattest a{
+        font-size: 40px!important;
+    }
+    .education-content::before{
+        left: -1.8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width:2400px) {
+    .education-box{
+        border-left: .3rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .3rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 2.5rem;
+    }
+    .education-column .title{
+        font-size: 3.5rem;
+    }
+    .education-content .content .year{
+        font-size: 2rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 2rem;
+    }
+    .education-content .content p{
+        font-size: 1.5rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 2.5rem;
+    }
+    .btnaboutattest a{
+        font-size: 35px!important;
+    }
+    .education-content::before{
+        left: -1.8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width:2400px) {
+    .education-box{
+        border-left: .3rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .3rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 2.5rem;
+    }
+    .education-column .title{
+        font-size: 3.5rem;
+    }
+    .education-content .content .year{
+        font-size: 2rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 2rem;
+    }
+    .education-content .content p{
+        font-size: 1.5rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 2.5rem;
+    }
+    .btnaboutattest a{
+        font-size: 30px!important;
+    }
+    .education-content::before{
+        left: -1.8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width:2000px) {
+    .education-box{
+        border-left: .2rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .2rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 1.8rem;
+    }
+    .education-column .title{
+        font-size: 2.5rem;
+    }
+    .education-content .content .year{
+        font-size: 1.5rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 1.5rem;
+    }
+    .education-content .content p{
+        font-size: 1.4rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 2rem;
+    }
+    .btnaboutattest a{
+        font-size: 20px!important;
+    }
+    .education-content::before{
+        left: -1.2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:1500px) {
+    .education-box{
+        border-left: .2rem solid var(--colorgreen);
+    }
+    .education-content .content{
+        border: .2rem solid var(--colorgreen);
+        border-radius: 2rem;
+    }
+    .educationp{
+        font-size: 1.3rem;
+    }
+    .education-column .title{
+        font-size: 2rem;
+    }
+    .education-content .content .year{
+        font-size: 1rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 1rem;
+    }
+    .education-content .content p{
+        font-size: 1.2rem;
+        padding-top: .6rem;
+    }
+    .education-content .content h3{
+        font-size: 1.5rem;
+    }
+    .btnaboutattest a{
+        font-size: 16px!important;
+    }
+    .education-content::before{
+        left: -1.2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media (max-width:1366px){
+    .education{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 5rem;
+        position: relative;
+        /* animation: leftAnim linear;
+        animation-timeline:view();
+        animation-range-start: 50%;
+        animation-range-end:100%; */
+    }
+    .educationp{
+        font-size: 1.2rem;
+        text-align: center;
+        background: transparent;
+        padding: 1% 2%;
+        /* border-radius: 9999px; */
+        /* border: .2rem solid var(--colorgreen); */
+        position: relative;
+        z-index: -1000000000000;
+        color:transparent;
+        /* animation: aboutanim linear;
+        animation-timeline: view();
+        animation-range-start: contain 30%;
+        animation-range-end: contain 100%;
+         opacity: 0; */
+        /* overflow: hidden; */
+        transform: translate(400%);
+        transition: .5s ease-in-out;
+    }
+    .educationp.educationp-vue{
+        transform: translate(0);
+        transition: .5s ease-in-out;
+    }
+    .educationp span{
+        color: white;
+    }
+    .educationp::before{
+        content: "J'ai un diplôme de Licence en Informatique et Télécomunications.";
+        position: absolute;
+        top:0rem;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: none;
+        z-index: 1000000000000;
+        /* border-radius: 9999px 0 0 9999px; */
+        /* border: .2rem solid var(--colorabout); */
+        color: white;
+        transform: rotate(10deg);
+        transition: .5s linear;
+        /* box-shadow: 0 20px 35px var(--colorgreen); */
+    }
+    .educationp::before:hover{
+        transform: rotate(0deg);
+        transition: .5s linear;
+    }
+    .educationp::after{
+        content: "Et je suivais la formation au centre de formation chez l'Hopse Formation,et j'ai eu un Certificat.";
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background:transparent;
+        z-index: 10000000000;
+        /* border-radius:0 9999px 9999px 0; */
+        border: none;
+        color: white;
+        /* box-shadow: 0 20px 35px var(--colorabout); */
+        /* transform: rotate(10deg); */
+        /* border: .2rem solid  var(--colorgreen); */
+    
+    }
+    
+    .education-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .education-column{
+        flex: 1 1 20rem;
+        position: relative;
+    }
+    .animateEducation-column{
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        z-index: 2000;
+        width: 150%;
+        height: 100%;
+        background: #151515;
+        /* border: 2rem solid red; */
+        transition: .5s linear;
+    }
+    .animateEducation-column2{
+        position: absolute;
+        top: 0;
+        right: -2rem;
+        z-index: 2000;
+        width: 150%;
+        height: 100%;
+        background: #151515;
+        transition: .5s linear;
+    }
+    .animateEducation-column.animateEducation-column-vue,.animateEducation-column2.animateEducation-column2-vue{
+        width: 0;
+        transition: .5s linear;
+    }
+    .education-column .title{
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 0 0 1.5rem 2rem;
+    }
+    .education-box{
+        position: relative;
+        border-left: .2rem solid var(--colorgreen);
+    }
+    .education-content{
+        position: relative;
+        padding-left: 2rem;
+    }
+    .education-content .content{
+        position: relative;
+        padding: 1rem;
+        border: .15rem solid var(--colorgreen);
+        border-radius: .6rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+    .education-content .content .year{
+        font-size: 1rem;
+        color: var(--colorgreen);
+        margin-bottom: .5rem;
+    }
+    .education-content .content .year i{
+        padding-right: .2rem;
+        font-size: 1rem;
+    }
+    .education-content .content h3{
+        font-size: 1.2rem;
+    }
+    .education-content .content p{
+        font-size: 1rem;
+        padding-top: .6rem;
+    }
+    .education-content .content img{
+        width: 100%;
+    }
+    .education-content .content::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--colorabout);
+        z-index: -1;
+        transition: .5s;
+    }
+    .education-content .content:hover::before{
+        width: 100%;
+    }
+    .education-content::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -.9rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: var(--colorgreen);
+        border-radius: 50%;
+    }
+    .btnaboutattest a{
+        font-size: 20px!important;
+    }
+}
+@media (max-width:453px) {
+    .btnaboutattest a{
+        font-size: 16px!important;
+    }
+}
+@media (max-width:353px) {
+    .btnaboutattest a{
+        font-size: 13px!important;
+    }
+}
+@media (max-width:298px) {
+    .btnaboutattest a{
+        font-size: 10px!important;
+    }
+}
+@media (max-width:208px) {
+    .btnaboutattest a{
+        width: 100%!important;
+    }
+}

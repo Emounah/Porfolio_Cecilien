@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+@font-face {
+  font-family: betty;
+  src: url('assets/fonts/Thinking_of_Betty.ttf');
+}
+@font-face {
+  font-family: MontserratAlternates-ExtraLight;
+  src: url('assets/fonts/MontserratAlternates-ExtraLight.otf');
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('assets/fonts/Montserrat-Regular.otf');
+}
+
+body{
+  overflow-x: hidden;
+}
