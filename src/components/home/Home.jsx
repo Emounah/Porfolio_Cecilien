@@ -48,8 +48,8 @@ function Home({ data }) {
                         <img src="./src/assets/images/image2.png" alt="" />
                     </div>
                     <div className="home-sci">
-                        <a href="tel:+261328492100"><i className="fab fa-whatsapp"></i></a>
-                        <a href="http://"><i className="fab fa-git"></i></a>
+                        <a href="tel:+261348928833"><i className="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/Emounah/Porfolio_Cecilien.git "><i className="fab fa-git"></i></a>
                         <a href="mailto:solofosoncecilienbotralahy@gmail.com"><i className="fas fa-envelope"></i></a>
                     </div>
 

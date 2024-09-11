@@ -19,7 +19,7 @@ function Education({activeLink}) {
                                 <h3>Obtention du duplôme de Licence en Informatique et Télécomunications - Université ISPM</h3>
                               
                                     <div className= {activeLink === "education"?"btn-box btns btnabout btnabout-education-vue btnaboutattest":"btn-box btns btnabout btnaboutattest"}>
-                                        <a href="" className="btn btnabout"><i className='fas fa-download'></i>Attestation</a>
+                                        <a  href="./src/assets/CV/Attestation_Duplome.pdf" download="Attestation_Duplôme.pdf" className="btn btnabout"><i className='fas fa-download'></i>Attestation</a>
                                     </div>
                                 
                             </div>
